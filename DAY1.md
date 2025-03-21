@@ -7,11 +7,7 @@ sudo apt install -y openjdk-17-jdk
 sudo update-alternatives --config java
 ```
 
-![1](https://github.com/user-attachments/assets/75ed3b14-c3ee-41e1-b83f-681c6bafd641)
-
- - After this you'll be prompted to select a java version select the index with java-17
-
-![1](https://github.com/user-attachments/assets/5ca00311-ea4c-44eb-b27c-a4e793ac5752)
+![Screenshot from 2025-03-20 21-18-02](https://github.com/user-attachments/assets/86242693-f978-48b8-a6a4-af7518950a0e)
 
 ## Installing Jenkins
 ```bash
@@ -24,7 +20,8 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
-![1](https://github.com/user-attachments/assets/467fc754-01ee-490e-a71e-e14b916494de)
+![Screenshot from 2025-03-20 21-19-53](https://github.com/user-attachments/assets/2a71d9b2-3d59-46a1-9792-7810bd596d3a)
+
 
 ## Starting Jenkins
 ```bash
@@ -35,53 +32,60 @@ sudo systemctl status jenkins
 ```
  - Copy the password provided in this step
 
-![1](https://github.com/user-attachments/assets/8f7d48c8-66ac-4d48-b0ef-e420dcbc3b13)
+![Screenshot from 2025-03-20 21-20-21](https://github.com/user-attachments/assets/46b5e84a-3b7f-43fb-8b17-b5db0cc4eed8)
+
 
 ## Jenkins Initial Setup
  - Open a browser and go to `localhost:8080` and paste in the password
 
-![1](https://github.com/user-attachments/assets/23cefbc4-25ca-4ddc-a59c-3c958275764c)
+![Screenshot from 2025-03-20 21-21-29](https://github.com/user-attachments/assets/4f9395d4-9f5e-49f5-a78f-5349a19a86ee)
+
 
  - Click on `continue`
 
-![1](https://github.com/user-attachments/assets/ea2b865f-689d-4d00-801c-8e4847a20adb)
+![Screenshot from 2025-03-20 21-22-05](https://github.com/user-attachments/assets/14a38605-ab73-43c8-b7bd-9641dee5d89c)
+
 
  - Click on `Install Suggested Plugins`
 
-![1](https://github.com/user-attachments/assets/4fe685f6-5245-4075-ad4c-a87e981c25ca)
+![Screenshot from 2025-03-20 21-17-40](https://github.com/user-attachments/assets/089c8ae2-954d-4634-8cc3-4ddff4635ec7)
+
 
  - The plugins will eb installed one by one and you'll be redirected to the next page click `Start Jenkins`
 
-![1](https://github.com/user-attachments/assets/ebd355c3-034e-4fe8-af74-d780d15bf8d7)
+![423567666-ebd355c3-034e-4fe8-af74-d780d15bf8d7](https://github.com/user-attachments/assets/fe5683ad-4f30-4e09-a7c7-816b86b310bb)
+
 
  - Fill in your details and create user id and password then click `save and continue`
 > [!NOTE]  
 > Remember this user id and password. This will overwrite the `Initial Password` generated, and will be required to login everytime you restart Jenkins.
 
-![image](https://github.com/user-attachments/assets/0146a230-0951-4671-b88c-6ded7564a01f)
+![423810766-0146a230-0951-4671-b88c-6ded7564a01f](https://github.com/user-attachments/assets/9e7397f2-2632-47ef-ab12-6e0222f3ae15)
+
 
 
  - Leave the default Jenkins URL then click `Save and Finish`
-
-![1](https://github.com/user-attachments/assets/7dc3ae3c-85f4-4820-80a4-9b455affc3ae)
 
 
 ## Setting up a Nginx freestyle project in Jenkins
  - In Jenkins home page click on `create a job`
 
-![1](https://github.com/user-attachments/assets/90d7c7fb-50ed-4bd3-93f4-5afb45a29734)
+![423572475-90d7c7fb-50ed-4bd3-93f4-5afb45a29734](https://github.com/user-attachments/assets/5091575b-2fa0-4c83-8649-d2cffcc1f438)
+
 
  - Enter a project name
  - Select `Freestyle Project`
  - Click `Ok`
 
-![1](https://github.com/user-attachments/assets/03d4672d-21e5-467f-9742-035c662784b8)
+![423573105-03d4672d-21e5-467f-9742-035c662784b8](https://github.com/user-attachments/assets/d2f98f42-90dc-4d39-898f-d1bd04c17e48)
+
 
  - In the next page scroll down to `Build Steps`
  - Click `Add Build Step`
  - Select `Execute Shell`
 
-![1](https://github.com/user-attachments/assets/60f7d6b0-85e9-44eb-a78b-9a94e8d46a94)
+![423574015-60f7d6b0-85e9-44eb-a78b-9a94e8d46a94](https://github.com/user-attachments/assets/32226535-ea83-4a53-bcc5-56d414602eb4)
+
 
  - Paste in the below code
 ```bash
@@ -100,12 +104,13 @@ sudo systemctl start nginx
 systemctl status nginx
 ```
 
-![1](https://github.com/user-attachments/assets/27fd056c-ea7e-4069-9f23-fd7887260f96)
+![423575224-27fd056c-ea7e-4069-9f23-fd7887260f96](https://github.com/user-attachments/assets/7bd78d85-5643-4990-90f2-e7fffe09ca42)
+
 
  - Click `Build Now` in the left side panel
    
-![1](https://github.com/user-attachments/assets/290bb3be-cf50-40e8-b42e-a1cc9e2f2341)
+![423575571-290bb3be-cf50-40e8-b42e-a1cc9e2f2341](https://github.com/user-attachments/assets/bcf19ea9-310e-456c-a20f-0b0fd09d5da9)
 
  - Your first Nginx project using Jenkins is successfully deployed!
  - Click on the Build in `Builds` and click on the `Console Output` to view the logs
-![1](https://github.com/user-attachments/assets/7a1271e1-da3a-4a32-95f0-de143585f826)
+![Screenshot from 2025-03-20 21-37-53](https://github.com/user-attachments/assets/86b125e1-f33c-4587-8c28-d7621bfedd6a)
