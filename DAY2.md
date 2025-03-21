@@ -57,7 +57,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "sanjai4334/docker"          // Replace with your Docker Hub username and image name
+        IMAGE_NAME = "niranjan1614/devops"          // Replace with your Docker Hub username and image name
         TAG = "latest"
         CONTAINER_NAME = "my-container"
         PORT = "3001"
@@ -68,7 +68,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo "Cloning GitHub repository..."
-                git 'https://github.com/sanjai4334/docker.git'  // Replace with your repo URL
+                git 'https://github.com/NiranjanG2004/New_doc_task2.git'  // Replace with your repo URL
             }
         }
 
