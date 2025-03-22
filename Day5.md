@@ -36,10 +36,10 @@ update-java-alternatives --list
 
 ![Screenshot from 2025-03-22 10-54-26](https://github.com/user-attachments/assets/e8f60e18-51a9-45e7-8786-5723d05af192)
 
-![Screenshot from 2025-03-22 10-53-42](https://github.com/user-attachments/assets/1dcda24e-381c-4c8f-a671-080aca022603)
 
 Output:
 
+![Screenshot from 2025-03-22 10-53-42](https://github.com/user-attachments/assets/1dcda24e-381c-4c8f-a671-080aca022603)
 ![Screenshot from 2025-03-22 14-43-55](https://github.com/user-attachments/assets/f827861b-8c51-4080-b79f-597340176ab4)
 ![Screenshot from 2025-03-22 14-44-05](https://github.com/user-attachments/assets/352d1702-1b2e-464b-85d9-6b51ef4978a8)
 ![Screenshot from 2025-03-22 14-44-14](https://github.com/user-attachments/assets/db6eca9d-c1d4-42f3-b3b3-b47a19a64e43)
