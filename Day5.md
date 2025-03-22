@@ -35,3 +35,5 @@ update-java-alternatives --list
 ## Verify the console to see the actions 
 
 ![Screenshot from 2025-03-22 10-54-26](https://github.com/user-attachments/assets/e8f60e18-51a9-45e7-8786-5723d05af192)
+
+![Screenshot from 2025-03-22 10-53-42](https://github.com/user-attachments/assets/1dcda24e-381c-4c8f-a671-080aca022603)
